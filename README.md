@@ -133,13 +133,13 @@ The database includes the following tables:
 - **NxN Model:** Prints the time taken for NxN queries.
 - **N+N Model:** Prints the time taken for N+N queries.
 
-![Output](https://github.com/user-attachments/assets/8b7db5bd-fbeb-45b7-8215-10c2bcbb9b25)
+![Screenshot 2025-01-19 214316](https://github.com/user-attachments/assets/4f208830-d3e0-40b2-9eab-822aab3cf10f)
 
 
 ### 2. Query Results
 - Lists the product details retrieved by both models.
 
-![Screenshot 2025-01-19 220441](https://github.com/user-attachments/assets/60902e7c-d00c-4d92-8d47-03a9961149ca)
+![Screenshot 2025-01-19 220441](https://github.com/user-attachments/assets/bb8ea4ae-fc71-4b79-8f6d-41a7a9418b43)
 
 
 ---
