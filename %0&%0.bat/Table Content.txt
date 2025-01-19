@@ -1,0 +1,61 @@
+INSERT INTO Categories (CategoryName, CategoryDescription) VALUES 
+('Electronics', 'Devices and gadgets such as smartphones, laptops, etc.'),
+('Clothing', 'Apparel for men, women, and children'),
+('Home Appliances', 'Electrical appliances used in homes like refrigerators, washing machines, etc.'),
+('Books', 'Printed and digital books across various genres'),
+('Furniture', 'Furniture items like chairs, tables, and sofas');
+
+INSERT INTO CatalogSettings (SettingName, SettingValue) VALUES
+('Currency', 'USD'),
+('Tax Rate', '0.10'),
+('Free Shipping Threshold', '50.00'),
+('Default Language', 'English'),
+('Max Order Quantity', '100');
+
+INSERT INTO Sellers (SellerName, Email, Password) VALUES 
+('Tech World', 'techworld@example.com', 'password123'),
+('Fashion Hub', 'fashionhub@example.com', 'password456'),
+('HomeStyle', 'homestyle@example.com', 'password789'),
+('BookStore Inc.', 'bookstore@example.com', 'password101'),
+('Furniture Store', 'furniturestore@example.com', 'password202');
+
+INSERT INTO Products (ProductName, Description, Price, CategoryID) VALUES 
+('Smartphone XYZ', 'Latest smartphone with advanced features', 699.99, 1),
+('Laptop ABC', 'High performance laptop for gaming and work', 1299.99, 1),
+('T-shirt', 'Cotton t-shirt in various sizes and colors', 19.99, 2),
+('Jeans', 'Stylish denim jeans for men', 39.99, 2),
+('Washing Machine', 'Top-load washing machine with large capacity', 499.99, 3),
+('Microwave Oven', 'Compact microwave for quick cooking', 89.99, 3),
+('The Great Gatsby', 'A classic novel by F. Scott Fitzgerald', 10.99, 4),
+('Pride and Prejudice', 'A romantic novel by Jane Austen', 12.99, 4),
+('Sofa Set', 'Modern sofa set with leather upholstery', 899.99, 5),
+('Dining Table', 'Wooden dining table for six people', 499.99, 5);
+
+INSERT INTO ProductInventory (ProductID, SellerID, Quantity) VALUES
+(1, 1, 100),
+(2, 1, 50),
+(3, 2, 200),
+(4, 2, 150),
+(5, 3, 30),
+(6, 3, 75),
+(7, 4, 120),
+(8, 4, 80),
+(9, 5, 40),
+(10, 5, 60);
+
+INSERT INTO Orders (SellerID, OrderDate, Total) VALUES
+(1, '2025-01-15 10:00:00', 899.99),
+(2, '2025-01-16 14:30:00', 59.98),
+(3, '2025-01-14 16:00:00', 799.99),
+(4, '2025-01-17 09:45:00', 23.98),
+(5, '2025-01-18 12:30:00', 1399.98);
+
+INSERT INTO OrderItems (OrderID, ProductID, Quantity) VALUES
+(1, 1, 1),  -- OrderID 1: ProductID 1 (Smartphone XYZ), Quantity 1
+(1, 2, 1),  -- OrderID 1: ProductID 2 (Laptop ABC), Quantity 1
+(2, 3, 3),  -- OrderID 2: ProductID 3 (T-shirt), Quantity 3
+(3, 5, 2),  -- OrderID 3: ProductID 5 (Washing Machine), Quantity 2
+(4, 7, 2),  -- OrderID 4: ProductID 7 (The Great Gatsby), Quantity 2
+(5, 9, 1),  -- OrderID 5: ProductID 9 (Sofa Set), Quantity 1
+(5, 10, 1); -- OrderID 5: ProductID 10 (Dining Table), Quantity 1
+
