@@ -145,5 +145,5 @@ The database includes the following tables:
 ---
 
 ## Conclusion
-
+The following project was built using Python and MySQL and was run on a system running windows 11 Pro with a Core i9-12900H CPU (14 Cores, 20 Logical processors) with 16GB RAM.
 This code provides a comparative analysis of two query models, demonstrating the trade-offs between individual and consolidated querying approaches. While the NxN model offers flexibility, the N+N model is more efficient for scenarios with multiple buyers querying shared catalogs.
